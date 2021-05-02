@@ -5,6 +5,7 @@
   "scripts": {
     "build": "rollup -c",
     "clean": "git clean -e '!/.env' -fdX .",
+    "start":"set NODE_ENV=production&&node server.js",
     "lint": "eslint .",
     "serve": "nodemon -w server.js server.js",
     "test": "jest",

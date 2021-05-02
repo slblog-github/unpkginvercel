@@ -2,9 +2,9 @@
   "name": "unpkg",
   "description": "The CDN for everything on npm",
   "scripts": {
-    "build": "rollup -c",
+    "build": "git init && rollup -c",
     "clean": "git clean -e '!/.env' -fdX .",
-    "start":"rollup -c && set NODE_ENV=production&&node server.js",
+    "start":"git init && git status && rollup -c && set NODE_ENV=production&&node server.js",
     "lint": "eslint .",
     "serve": "nodemon -w server.js server.js",
     "test": "jest",
